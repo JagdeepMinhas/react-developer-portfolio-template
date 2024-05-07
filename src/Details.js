@@ -1,7 +1,7 @@
 // Enter all your detials in this file
 // Logo images
 import logogradient from "./assets/logo.png";
-import logo from "./assets/logo.png";
+import logo from "./assets/logo2.png";
 // Profile Image
 import profile from "./assets/profile.png";
 // Tech stack images
@@ -21,11 +21,16 @@ import postman from "./assets/techstack/postman.png";
 import figma from "./assets/techstack/figma.png";
 // Porject Images
 import projectImage1 from "./assets/projects/project1.jpg";
-import projectImage2 from "./assets/projects/project2.jpg";
+import projectImage2 from "./assets/projects/project2.png";
 import projectImage3 from "./assets/projects/project3.jpg";
 import projectImage4 from "./assets/projects/project4.jpg";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
+import projectImage7 from "./assets/projects/project7.jpg";
+import projectImage8 from "./assets/projects/project8.jpg";
+import projectImage9 from "./assets/projects/project9.jpg";
+import projectImage10 from "./assets/projects/project10.jpg";
+import projectImage11 from "./assets/projects/project11.jpg";
 
 // Logos
 export const logos = {
@@ -36,11 +41,11 @@ export const logos = {
 // Enter your Personal Details here
 export const personalDetails = {
   name: "Jagdeep Singh",
-  tagline: "Enthusiastic Full Stack Web Developer seeking internships and co-ops.",
+  tagline:
+    "Enthusiastic Full Stack Web Developer seeking internships and co-ops.",
   img: profile,
   about: `I am an aspiring Full Stack Web Developer currently pursuing a Bachelor's degree in Computing Science at Simon Fraser University. With a strong foundation in computer science and practical experience in software development, I bring proficiency in JavaScript, Python, React, Node.js, and more to the table. Eager to apply my skills and gain real-world experience, I am actively seeking internships and co-op opportunities where I can contribute meaningfully to innovative projects and continue my learning journey.`,
 };
-
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
@@ -56,7 +61,7 @@ export const workDetails = [
     Position: "Software Devloper (Student-contract)",
     Company: `Velocity Tech`,
     Location: "Toronto",
-    Type: "Part-time" ,
+    Type: "Part-time",
     Duration: "Feb 2024 - May 2024",
   },
   {
@@ -65,8 +70,7 @@ export const workDetails = [
     Location: "Langley",
     Type: "Full-time",
     Duration: "Sep 2019 - Feb 2022",
-  }
-  
+  },
 ];
 
 // Enter your Education Details here
@@ -83,7 +87,7 @@ export const eduDetails = [
     Company: `Langara College`,
     Location: "Vancouver",
     Type: "Full Time",
-    Duration: "Sep 2017 - Sep 2019g ",
+    Duration: "Sep 2017 - Sep 2019",
   },
 ];
 
@@ -108,63 +112,111 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Project title 1",
+    title: "Edu-FlashCard App",
     image: projectImage1,
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    techstack: "Node.js, Express,js, React, MongoDB, GCP, Redis cloud",
     previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/Sajantoor/cmpt474-project",
   },
   {
-    title: "Project title 2",
+    title: "Recipe-app",
     image: projectImage2,
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    techstack: "Node.js, Express,js, React, PostgreSQL, Docker",
     previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/JagdeepMinhas/DishCraft/tree/master",
   },
   {
-    title: "Project title 3",
+    title: "TradeTrove",
     image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    description: ``,
+    techstack:
+      "Node.js, Express,js, React, Tailwind, PostgreSQL, GCP, Firebase",
     previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/JagdeepMinhas/DishCraft",
   },
   {
-    title: "Project title 4",
+    title: "CShell: CLI",
     image: projectImage4,
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    techstack: "Built in C utilizing multithreading",
     previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    githubLink:
+      "https://github.com/JagdeepMinhas/Cshell-Command-Line-Interpreter",
   },
   {
-    title: "Project title 5",
+    title: "MuliThreadedAudio-mixer",
     image: projectImage5,
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
     techstack: "HTML/CSS, JavaScript",
     previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/JagdeepMinhas/ThreadedAudio-Mixer",
   },
   {
-    title: "Project title 6",
+    title: "Classification Project",
     image: projectImage6,
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
     techstack: "HTML/CSS, JavaScript",
     previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/JagdeepMinhas/Classification-Project",
+  },
+  {
+    title: "9MenMorris",
+    image: projectImage7,
+    description: `This is sample project description random things are here in description This is sample
+project lorem ipsum generator for dummy content`,
+    techstack: "HTML/CSS, JavaScript",
+    previewLink: "https://google.com",
+    githubLink: "https://github.com/JagdeepMinhas/9MenMorris",
+  },
+  {
+    title: "SweepAI: Intelligent Cleaning System",
+    image: projectImage8,
+    description: `This is sample project description random things are here in description This is sample
+project lorem ipsum generator for dummy content`,
+    techstack: "HTML/CSS, JavaScript",
+    previewLink: "https://google.com",
+    githubLink:
+      "https://github.com/JagdeepMinhas/SweepAI-Intelligent-Cleaning-System",
+  },
+  {
+    title: "Intrusion Detection System using R",
+    image: projectImage9,
+    description: `This is sample project description random things are here in description This is sample
+project lorem ipsum generator for dummy content`,
+    techstack: "HTML/CSS, JavaScript",
+    previewLink: "https://google.com",
+    githubLink:
+      "https://github.com/JagdeepMinhas/Intrusion-Detection-system-Using-R",
+  },
+  {
+    title: "Underwater Adventures: 2D Arcade Game",
+    image: projectImage10,
+    description: `This is sample project description random things are here in description This is sample
+project lorem ipsum generator for dummy content`,
+    techstack: "HTML/CSS, JavaScript",
+    previewLink: "https://google.com",
+    githubLink: "https://github.com/JagdeepMinhas/UnderwaterAdventures",
+  },
+  {
+    title: "Deny and Conquer",
+    image: projectImage11,
+    description: `This is sample project description random things are here in description This is sample
+project lorem ipsum generator for dummy content`,
+    techstack: "HTML/CSS, JavaScript",
+    previewLink: "https://google.com",
+    githubLink: "https://github.com/EJNicolas/CMPT371-Project",
   },
 ];
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "hi@example.com",
-  phone: "+91 12345 67890",
+  email: "jag_singh@sfu.ca",
+  phone: "+1 (604)-961-8874",
 };
