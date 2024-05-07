@@ -1,9 +1,9 @@
 // Enter all your detials in this file
 // Logo images
-import logogradient from "./assets/logo.svg";
-import logo from "./assets/logo2.svg";
+import logogradient from "./assets/logo.png";
+import logo from "./assets/logo.png";
 // Profile Image
-import profile from "./assets/profile.jpg";
+import profile from "./assets/profile.png";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
@@ -35,60 +35,55 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
+  name: "Jagdeep Singh",
+  tagline: "Enthusiastic Full Stack Web Developer seeking internships and co-ops.",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `I am an aspiring Full Stack Web Developer currently pursuing a Bachelor's degree in Computing Science at Simon Fraser University. With a strong foundation in computer science and practical experience in software development, I bring proficiency in JavaScript, Python, React, Node.js, and more to the table. Eager to apply my skills and gain real-world experience, I am actively seeking internships and co-op opportunities where I can contribute meaningfully to innovative projects and continue my learning journey.`,
 };
+
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
-  linkdein: "https://www.linkedin.com/",
-  github: "https://www.github.com/",
-  twitter: "https://twitter.com/",
+  linkdein: "https://www.linkedin.com/in/jagdeepminhas/",
+  github: "https://github.com/JagdeepMinhas",
+  twitter: "https://twitter.com/Jagdeep78786167",
   instagram: "https://www.instagram.com/",
 };
 
 // Enter your Work Experience here
 export const workDetails = [
   {
-    Position: "Frontend Web Developer",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Full Time",
-    Duration: "Sep 2021 - Dec 2021",
+    Position: "Software Devloper (Student-contract)",
+    Company: `Velocity Tech`,
+    Location: "Toronto",
+    Type: "Part-time" ,
+    Duration: "Feb 2024 - May 2024",
   },
   {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
-  },
+    Position: "Computer Network Technician",
+    Company: `Skynet Wireless`,
+    Location: "Langley",
+    Type: "Full-time",
+    Duration: "Sep 2019 - Feb 2022",
+  }
+  
 ];
 
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Frontend Development",
-    Company: "Udemy, YouTube, Google, Medium",
-    Location: "Online",
+    Position: "Bachelor of Science: Computer Science",
+    Company: "Simon Fraser University",
+    Location: "Burnaby",
     Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Duration: "May 2022 - Present",
   },
   {
-    Position: "Bachelor in Electronics & Communication",
-    Company: `Your College Name here`,
-    Location: "Bengaluru",
+    Position: "Associate of Scienc: Computer Science",
+    Company: `Langara College`,
+    Location: "Vancouver",
     Type: "Full Time",
-    Duration: "Aug 2020 - Present",
+    Duration: "Sep 2017 - Sep 2019g ",
   },
 ];
 
