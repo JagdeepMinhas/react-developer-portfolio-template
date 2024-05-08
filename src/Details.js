@@ -40,9 +40,9 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Jagdeep Singh",
+  name: "Jagdeep",
   tagline:
-    "Enthusiastic Full Stack Web Developer seeking internships and co-ops.",
+    "Enthusiastic Full Stack Web Developer seeking co-ops and internships.",
   img: profile,
   about: `I am an aspiring Full Stack Web Developer currently pursuing a Bachelor's degree in Computing Science at Simon Fraser University. With a strong foundation in computer science and practical experience in software development, I bring proficiency in JavaScript, Python, React, Node.js, and more to the table. Eager to apply my skills and gain real-world experience, I am actively seeking internships and co-op opportunities where I can contribute meaningfully to innovative projects and continue my learning journey.`,
 };
@@ -76,14 +76,14 @@ export const workDetails = [
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Bachelor of Science: Computer Science",
+    Position: "BSc in Computer Science",
     Company: "Simon Fraser University",
     Location: "Burnaby",
     Type: "Full Time",
-    Duration: "May 2022 - Present",
+    Duration: "May 2022 - May 2025 (Expected)",
   },
   {
-    Position: "Associate of Scienc: Computer Science",
+    Position: "Associate of Science: Computer Science",
     Company: `Langara College`,
     Location: "Vancouver",
     Type: "Full Time",
@@ -114,8 +114,7 @@ export const projectDetails = [
   {
     title: "Edu-FlashCard App",
     image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `Simplify learning with flashcards, turning lessons into engaging games, and organize by subject for easy access.`,
     techstack: "Node.js, Express,js, React, MongoDB, GCP, Redis cloud",
     previewLink: "https://google.com",
     githubLink: "https://github.com/Sajantoor/cmpt474-project",
@@ -123,8 +122,7 @@ project lorem ipsum generator for dummy content`,
   {
     title: "Recipe-app",
     image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `Dive into culinary creativity with DishCraft's sleek recipe app, featuring seamless CRUD functionality for effortless recipe management.`,
     techstack: "Node.js, Express,js, React, PostgreSQL, Docker",
     previewLink: "https://google.com",
     githubLink: "https://github.com/JagdeepMinhas/DishCraft/tree/master",
@@ -132,7 +130,7 @@ project lorem ipsum generator for dummy content`,
   {
     title: "TradeTrove",
     image: projectImage3,
-    description: ``,
+    description: `Empower your trades journey with TradeTrove, a dynamic web platform connecting users with trusted tradespeople for hassle-free service engagement.`,
     techstack:
       "Node.js, Express,js, React, Tailwind, PostgreSQL, GCP, Firebase",
     previewLink: "https://google.com",
@@ -141,8 +139,7 @@ project lorem ipsum generator for dummy content`,
   {
     title: "CShell: CLI",
     image: projectImage4,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `Unleash command-line efficiency with our Cshell Interpreter, featuring interactive and script modes, seamless process management, and robust system call integration.`,
     techstack: "Built in C utilizing multithreading",
     previewLink: "https://google.com",
     githubLink:
@@ -151,18 +148,16 @@ project lorem ipsum generator for dummy content`,
   {
     title: "MuliThreadedAudio-mixer",
     image: projectImage5,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    description: `Harness the power of "myChannels," a dynamic multi-threaded mixer, for seamless aggregation and processing of audio data from multiple channels, ensuring efficiency, integrity, and precision.`,
+    techstack: "Built in C utilizing multithreading and locks",
     previewLink: "https://google.com",
     githubLink: "https://github.com/JagdeepMinhas/ThreadedAudio-Mixer",
   },
   {
     title: "Classification Project",
     image: projectImage6,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    description: `Empower your projects with a versatile suite featuring diverse classifiers tailored for OCR and behavioral cloning, achieving competitive accuracy through expertly curated datasets, innovative preprocessing, and model optimization techniques`,
+    techstack: "Python, NumpPy,",
     previewLink: "https://google.com",
     githubLink: "https://github.com/JagdeepMinhas/Classification-Project",
   },
@@ -171,16 +166,15 @@ project lorem ipsum generator for dummy content`,
     image: projectImage7,
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    techstack: "Python, NumpPy",
     previewLink: "https://google.com",
     githubLink: "https://github.com/JagdeepMinhas/9MenMorris",
   },
   {
     title: "SweepAI: Intelligent Cleaning System",
     image: projectImage8,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    description: `SweepAI: 2D Grid Cleaning Game}: Dive into a cleaning adventure with our innovative 2D grid game, where you guide an intelligent agent through dynamic environments, optimizing cleaning efficiency using advanced search algorithms and intuitive visualization features.`,
+    techstack: "Python, NumpPy",
     previewLink: "https://google.com",
     githubLink:
       "https://github.com/JagdeepMinhas/SweepAI-Intelligent-Cleaning-System",
@@ -188,9 +182,8 @@ project lorem ipsum generator for dummy content`,
   {
     title: "Intrusion Detection System using R",
     image: projectImage9,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    description: `Engineered feature extraction for Hidden Markov models via Principal Component Analysis on electricity consumption data, optimizing data visualization and analysis for enhanced intrusion detection`,
+    techstack: "R, Rstudio",
     previewLink: "https://google.com",
     githubLink:
       "https://github.com/JagdeepMinhas/Intrusion-Detection-system-Using-R",
@@ -198,18 +191,16 @@ project lorem ipsum generator for dummy content`,
   {
     title: "Underwater Adventures: 2D Arcade Game",
     image: projectImage10,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    description: `Dive into our engaging 2D arcade game in Java, featuring captivating graphics and intuitive gameplay`,
+    techstack: "Java widget toolkit, Maven",
     previewLink: "https://google.com",
     githubLink: "https://github.com/JagdeepMinhas/UnderwaterAdventures",
   },
   {
     title: "Deny and Conquer",
     image: projectImage11,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    description: `Engage in strategic multiplayer gameplay where users compete to conquer the most grids in this Java-based online gaming experience.`,
+    techstack: "Java, Multithreading, Socket programming",
     previewLink: "https://google.com",
     githubLink: "https://github.com/EJNicolas/CMPT371-Project",
   },

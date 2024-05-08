@@ -59,21 +59,21 @@ function Home() {
   return (
     <main className="container mx-auto max-width section md:flex justify-between items-center">
       <div>
-        <h1
-          ref={h11}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
-        >
-          Hi,👋<br></br>My Name is<br></br>
-        </h1>
-        <h1
+      <h1
+        ref={h11}
+        className="text-2xl text-dark-heading dark:text-light-heading md:text-2xl xl:text-2xl xl:leading-tight font-bold"
+      >
+        Hi,👋 <br></br>I'm{" "}
+        <span
           ref={h12}
-          className="text-2xl bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-2xl xl:leading-tight font-bold"
         >
-          {name}
-        </h1>
+          {name}.
+        </span>
+      </h1>
         <h2
           ref={h13}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-2xl xl:leading-tight font-bold"
         >
           {tagline}
         </h2>
