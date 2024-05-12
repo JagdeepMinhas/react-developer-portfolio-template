@@ -10,12 +10,14 @@ function Project({
 }) {
   return (
     <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900 flex flex-col">
-      <img
-        src={image}
-        alt=""
-        loading="lazy"
-        className="object-cover h-64 w-full"
-      />
+      <div className="h-64">
+        <img
+          src={image}
+          alt=""
+          loading="lazy"
+          className="object-cover h-64 w-full"
+        />
+      </div>
       <div className="dark:bg-dark-card p-4 flex flex-col justify-between h-full">
         <div>
           <h1 className="dark:text-light-heading font-semibold text-lg pt-1">
