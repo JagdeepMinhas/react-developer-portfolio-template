@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Lottie from "react-lottie";
-import animationData from "../lotties/Contact.json";
+import animationData from "../lotties/contact.json";
 import { contactDetails } from "../Details";
 import { MdAttachEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
