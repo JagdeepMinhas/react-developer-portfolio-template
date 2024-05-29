@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { logos, socialMediaUrl } from "../Details";
+import { socialMediaUrl } from "../Details";
 import Lottie from "react-lottie";
 import animationData from "../lotties/logo.json";
 
