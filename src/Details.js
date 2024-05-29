@@ -42,7 +42,7 @@ export const logos = {
 export const personalDetails = {
   name: "Jagdeep",
   tagline:
-    "Enthusiastic Full Stack Web Developer seeking co-ops and internships.",
+    "Enthusiastic Software Developer seeking co-ops and internships.",
   img: profile,
   about: `I am an aspiring Full Stack Web Developer currently pursuing a Bachelor's degree in Computing Science at Simon Fraser University. With a strong foundation in computer science and practical experience in software development, I bring proficiency in JavaScript, Python, React, Node.js, and more to the table. Eager to apply my skills and gain real-world experience, I am actively seeking internships and co-op opportunities where I can contribute meaningfully to innovative projects and continue my learning journey.`,
 };

@@ -1,88 +1,140 @@
-import React, { useRef, useEffect } from "react";
-import gsap from "gsap";
-import { personalDetails } from "../Details";
+import React, { useState } from "react";
+import Lottie from "react-lottie";
+import animationData from "../lotties/contact.json";
+import { contactDetails } from "../Details";
+import { MdAttachEmail } from "react-icons/md";
+import { FaPhoneVolume } from "react-icons/fa6";
 
-function Home() {
-  const { name, tagline, img } = personalDetails;
-  const h11 = useRef();
-  const h12 = useRef();
-  const h13 = useRef();
-  const myimageref = useRef();
-  useEffect(() => {
-    const tl = gsap.timeline();
-    tl.from(
-      h11.current,
-      {
-        x: "-100%",
-        delay: 0.8,
-        opacity: 0,
-        duration: 2,
-        ease: "Power3.easeOut",
-      },
-      "<"
-    )
-      .from(
-        h12.current,
-        {
-          x: "-100%",
-          delay: 0.5,
-          opacity: 0,
-          duration: 2,
-          ease: "Power3.easeOut",
-        },
-        "<"
-      )
-      .from(
-        h13.current,
-        {
-          x: "-100%",
-          delay: 0.1,
-          opacity: 0,
-          duration: 2,
-          ease: "Power3.easeOut",
-        },
-        "<"
-      )
-      .from(
-        myimageref.current,
-        {
-          x: "200%",
-          delay: 0.5,
-          opacity: 0,
-          duration: 2,
-          ease: "Power3.easeOut",
-        },
-        "<"
-      );
-  }, []);
+function ContactForm() {
+  const { email, phone } = contactDetails;
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can add code to handle form submission, like sending the data to a server
+    console.log("Form submitted:", formData);
+    // You can also add validation here before submitting the form
+  };
 
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center">
-      <div>
-      <h1
-        ref={h11}
-        className="text-2xl text-dark-heading dark:text-light-heading md:text-2xl xl:text-2xl xl:leading-tight font-bold"
-      >
-        Hi,👋 <br></br>I'm{" "}
-        <span
-          ref={h12}
-          className="bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-2xl xl:leading-tight font-bold"
-        >
-          {name}.
-        </span>
-      </h1>
-        <h2
-          ref={h13}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-2xl xl:leading-tight font-bold"
-        >
-          {tagline}
-        </h2>
+    <div className="flex flex-wrap">
+      {/* Contact Form on the left side */}
+      <div className="w-full md:w-1/2 p-4">
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+          <div className="mb-4">
+            <label
+              htmlFor="name"
+              className="block text-3xl font-medium text-gray-700"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              htmlFor="email"
+              className="block text-3xl font-medium text-gray-700"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              htmlFor="subject"
+              className="block text-3xl font-medium text-gray-700"
+            >
+              Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              required
+              className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              htmlFor="message"
+              className="block text-3xl font-medium text-gray-700"
+            >
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            ></textarea>
+          </div>
+          <div className="text-center">
+            <button
+              type="submit"
+              className="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
-      <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="Pavan MG" />
+      {/* Animation, Email, and Phone Number on the right side */}
+      <div className="w-full md:w-1/2 p-4 flex items-center justify-center">
+        <div className="text-center">
+          <Lottie options={defaultOptions} height={300} width={300} />
+          <div className="mt-4">
+            <MdAttachEmail className="inline-block text-3xl" />
+            <p className="text-gray-700 text-3xl inline-block ml-2">{email}</p>
+            <br />
+            <FaPhoneVolume className="inline-block text-3xl" />
+            <p class="text-gray-700 text-3xl inline-block ml-2">{phone}</p>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
 
-export default Home;
+export default ContactForm;

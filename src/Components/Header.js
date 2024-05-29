@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { logos, socialMediaUrl } from "../Details";
+import Lottie from "react-lottie";
+import animationData from "../lotties/logo.json";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,12 +10,21 @@ function Header() {
   const toggleClass = () => {
     setIsOpen(!isOpen);
   };
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
 
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
         <NavLink to="/">
-          <img className="w-14" src={logos.logogradient} alt="logo" />
+        <Lottie options={defaultOptions} height={100} width={100} />
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
