@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Lottie from "react-lottie";
 import emailjs from "@emailjs/browser";
 import animationData from "../lotties/contact.json";
-import { contactDetails } from "../Details";
+
 
 function ContactForm() {
-  const { email, phone } = contactDetails;
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
