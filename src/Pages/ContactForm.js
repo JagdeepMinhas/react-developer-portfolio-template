@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Lottie from "react-lottie";
+import emailjs from "@emailjs/browser";
 import animationData from "../lotties/contact.json";
 import { contactDetails } from "../Details";
-import { MdAttachEmail } from "react-icons/md";
-import { FaPhoneVolume } from "react-icons/fa6";
 
 function ContactForm() {
   const { email, phone } = contactDetails;
@@ -32,9 +31,33 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add code to handle form submission, like sending the data to a server
-    console.log("Form submitted:", formData);
-    // You can also add validation here before submitting the form
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const userId = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+    emailjs
+      .sendForm(
+        serviceId,
+        templateId,
+        e.target,
+        userId
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message sent successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log( error);
+          alert("Failed to send message. Please try again.");
+        }
+      );
   };
 
   return (
@@ -56,7 +79,7 @@ function ContactForm() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="mt-1 p-1 block w-full border-2 border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
           <div className="mb-4">
@@ -73,7 +96,7 @@ function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="mt-1 p-2 block w-full border-2 border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
           <div className="mb-4">
@@ -90,7 +113,7 @@ function ContactForm() {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="mt-1 p-2 block w-full border-2 border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
           <div className="mb-4">
@@ -107,7 +130,7 @@ function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              className="mt-1 p-2 block w-full border-2 border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             ></textarea>
           </div>
           <div className="text-center">
@@ -120,17 +143,10 @@ function ContactForm() {
           </div>
         </form>
       </div>
-      {/* Animation, Email, and Phone Number on the right side */}
+      {/* Animation on the right side */}
       <div className="w-full md:w-1/2 p-4 mx-auto flex items-center justify-center">
         <div className="text-center">
           <Lottie options={defaultOptions} height={300} width={300} />
-          <div className="mt-4">
-            <MdAttachEmail className="inline-block text-3xl" />
-            <p className="text-gray-700 text-3xl inline-block ml-4 mb-4">{email}</p>
-            <br />
-            <FaPhoneVolume className="inline-block text-3xl" />
-            <p className="text-gray-700 text-3xl inline-block ml-4">{phone}</p>
-          </div>
         </div>
       </div>
     </div>
