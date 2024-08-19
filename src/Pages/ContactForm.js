@@ -61,7 +61,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center container mx-auto max-width pt-10 pb-20 ">
       {/* Contact Form on the left side */}
       <div className="w-full md:w-1/2 p-4 mx-auto">
         <form onSubmit={handleSubmit} className="max-w-md mx-auto">
