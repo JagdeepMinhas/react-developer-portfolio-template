@@ -144,8 +144,8 @@ function ContactForm() {
         </form>
       </div>
       {/* Animation on the right side */}
-      <div className="w-full md:w-1/2 p-4 mx-auto flex items-center justify-center">
-        <div className="text-center">
+      <div className="w-full md:w-1/2 p-4 mx-auto flex">
+        <div className="text-center ml-auto">
           <Lottie options={defaultOptions} height={300} width={300} />
         </div>
       </div>
