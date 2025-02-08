@@ -41,8 +41,7 @@ export const logos = {
 // Enter your Personal Details here
 export const personalDetails = {
   name: "Jagdeep",
-  tagline:
-    "Enthusiastic Software Developer seeking co-ops and internships.",
+  tagline: "Enthusiastic Software Developer seeking co-ops and internships.",
   img: profile,
   about: `I am an aspiring Full Stack Web Developer currently pursuing a Bachelor's degree in Computing Science at Simon Fraser University. With a strong foundation in computer science and practical experience in software development, I bring proficiency in JavaScript, Python, React, Node.js, and more to the table. Eager to apply my skills and gain real-world experience, I am actively seeking internships and co-op opportunities where I can contribute meaningfully to innovative projects and continue my learning journey.`,
 };
@@ -164,8 +163,7 @@ export const projectDetails = [
   {
     title: "9MenMorris",
     image: projectImage7,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `Developed an AI-powered 9 Men's Morris game with advanced strategies, including MinMax with Alpha-Beta pruning and Expectimax.`,
     techstack: "Python, NumpPy",
     previewLink: "https://google.com",
     githubLink: "https://github.com/JagdeepMinhas/9MenMorris",
